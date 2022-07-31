@@ -9,7 +9,7 @@ class Evaluate:
     # Write your code here
 
 
-  def __init__(self, size):
+  def _init_(self, size):
     """Inits Evaluate with top, size_of_stack and stack.
     Arguments:
       size_of_stack: An integer to set the size of stack.
@@ -26,10 +26,9 @@ class Evaluate:
       True if it is empty, else returns False.
     """
     return self.top == -1
-      
 
 
-  def pop(self):
+  def mypop(self):
     """
     Do pop operation if the stack is not empty.
     Returns:
@@ -93,6 +92,7 @@ class Evaluate:
             result = ops[token](operand1, operand2)
             self.push(int(result))
     return self.stack[0]
+
 
 
 # Do not change the following code
